@@ -2,6 +2,9 @@
 Angular application displaying map and annotations  
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.1.
 ![image](./screenshot.png)
+
+## Prerequisites
+- you should have node 14 or later installed on your machine
 ## How To Run
 - Open terminal
 - Run `git clone https://github.com/shootermv/mobileyeAssignment.git`
