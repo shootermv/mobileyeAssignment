@@ -4,6 +4,7 @@ import { Add } from './store/actions';
 import * as mapboxgl from 'mapbox-gl';
 import * as MapboxDraw from '@mapbox/mapbox-gl-draw';
 import { Feature } from 'geojson';
+import { environment } from '../environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -11,8 +12,6 @@ import { Feature } from 'geojson';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
-  accessToken =
-    'your-key';
   annotations: Feature[] = [];
   map: mapboxgl.Map | null = null;
   modes: string[] = ['Point', 'Line', 'Poly'];
@@ -25,7 +24,7 @@ export class AppComponent implements OnInit {
     });
   }
   ngOnInit() {
-    (mapboxgl as any).accessToken = this.accessToken;
+    (mapboxgl as any).accessToken = environment.accessKey;
 
     this.map = new mapboxgl.Map({
       container: 'map',

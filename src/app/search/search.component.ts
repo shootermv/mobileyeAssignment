@@ -1,5 +1,7 @@
 import { Component, Input } from '@angular/core';
 import * as mapboxgl from 'mapbox-gl';
+import { environment } from '../../environments/environment';
+
 
 @Component({
   selector: 'app-search',
@@ -8,11 +10,10 @@ import * as mapboxgl from 'mapbox-gl';
 })
 export class SearchComponent  {
   @Input() map: mapboxgl.Map | null = null;
-  @Input() accessToken: string = '';
   term: string = '';
 
   search() {
-    fetch(`https://api.mapbox.com/geocoding/v5/mapbox.places/${this.term}.json?access_token=${this.accessToken}`)
+    fetch(`https://api.mapbox.com/geocoding/v5/mapbox.places/${this.term}.json?access_token=${environment.accessKey}`)
     .then(r => r.json())
     .then(data => {
       this.map?.flyTo({
