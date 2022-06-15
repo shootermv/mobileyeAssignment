@@ -1,0 +1,13 @@
+<div class="card annotation-section">
+  <div class="scroll-area">
+    <div
+      *ngFor="let ann of annotations"
+      class="annotation-item"
+      (click)="select(ann.id!)"
+    >
+      {{ ann.geometry.type }}
+      <button (click)="remove(ann.id!)" class="delete">&#x2716;</button>
+    </div>
+    <div *ngIf="annotations.length===0" class="empty">no annotations yet</div>
+  </div>
+</div>

@@ -1,0 +1,6 @@
+:host {
+ padding: 0 10px;
+}
+:host > div {
+  margin: 0 0 5px;
+}
