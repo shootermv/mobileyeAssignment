@@ -1,5 +1,7 @@
 # MobileyeAssignment
-Angular application displaying map and annotations  
+Angular & [mapbox](https://www.mapbox.com/) application displaying map and annotations 
+You can place shapes on the map and manage them  
+##
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.1.
 ![image](./screenshot.png)
 
