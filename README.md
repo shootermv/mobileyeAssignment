@@ -1,10 +1,15 @@
 # MobileyeAssignment
-Angular & [mapbox](https://www.mapbox.com/) application displaying map and annotations   
+Single Page application displaying map and annotations   
 You can place shapes on the map and manage them  
 ##
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.1.
 ![image](./screenshot.png)
+## Tech stack
+- [angular](https://angular.io)
+- [ngrx](https://ngrx.io/)
+- [mapbox](https://www.mapbox.com/)
 
+# Develop
 ## Prerequisites
 - you should have node 14 or later installed on your machine
 ## How To Run
