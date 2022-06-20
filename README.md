@@ -8,6 +8,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - [angular](https://angular.io)
 - [ngrx](https://ngrx.io/)
 - [mapbox](https://www.mapbox.com/)
+- [typescript](https://www.typescriptlang.org/)
 
 # Develop
 ## Prerequisites
